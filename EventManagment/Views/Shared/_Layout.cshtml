@@ -1,0 +1,295 @@
+﻿@*<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Conference and Event Managment Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Conference and Event Managment", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="footer-area section-padding-80-0">
+            <div class="container">
+                <div class="row justify-content-between">
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h4 class="widget-title">Contact Us</h4>
+
+                            <!-- Footer Content -->
+                            <div class="footer-content mb-15">
+                                <h3>(+65) 1234 5678</h3>
+                                <p>40 Baria Sreet 13/2 NY City, US <br> hello.colorlib@gmail.com</p>
+                            </div>
+                            <p class="mb-0">
+                                Mon - Fri: 9:00 - 19:00 <br>
+                                Closed on Weekends
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h4 class="widget-title">Quick Link</h4>
+
+                            <!-- Nav -->
+                            <nav>
+                                <ul class="our-link">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Forum Registeration</a></li>
+                                    <li><a href="#">Forum Sign In</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h4 class="widget-title">Resources</h4>
+
+                            <!-- Nav -->
+                            <nav>
+                                <ul class="our-link">
+                                    <li><a href="#">Customer Support</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Media &amp; Press</a></li>
+                                    <li><a href="#">Our Team</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h4 class="widget-title">About Us</h4>
+                            <p>Integer vehicula mauris libero, at molestie eros imperdiet sit amet.</p>
+
+                            <!-- Copywrite Text -->
+                            <div class="copywrite-text mb-30">
+                                <p>© Copyright 2018 <a href="#">Colorlib</a>.</p>
+                            </div>
+
+                            <!-- Social Info -->
+                            <div class="footer-social-info">
+                                <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                                <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="" data-original-title="YouTube"><i class="fa fa-youtube-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row" style="margin-bottom: 30px;">
+
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright ©
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved 
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>*@
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Conference and Event Managment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- styles -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        @Styles.Render("~/assets/css/bootstrap.css")
+        @Styles.Render("~/assets/css/bootstrap-responsive.css")
+        @Styles.Render("~/assets/css/docs.css")
+        @Styles.Render("~/assets/css/prettyPhoto.css")
+        @Styles.Render("~/assets/js/google-code-prettify/prettify.css")
+        @Styles.Render("~/assets/css/flexslider.css")
+        @Styles.Render("~/assets/css/sequence.css")
+        @Styles.Render("~/assets/css/style.css")
+        @Styles.Render("~/assets/color/default.css")
+        @Styles.Render("~/Content/Site.css")
+        
+
+        <!-- fav and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="~/assets/ico/apple-touch-icon-57-precomposed.png">
+        <!-- =======================================================
+          Theme Name: Event Managment
+          Theme URL: https://bootstrapmade.com/serenity-bootstrap-corporate-template/
+          Author: Event Managment
+          Author URL: https://bootstrapmade.com
+        ======================================================= -->
+    </head>
+    <body>
+        <header>
+            <!-- Navbar
+            ================================================== -->
+            <div class="navbar navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <!-- logo -->
+                        <a class="brand logo" href="/Home/Index">Conference and Event Managment</a>
+                        <!-- end logo -->
+                        <!-- top menu -->
+                        <div class="navigation">
+                            <nav>
+                                <ul class="nav topnav">
+                                    <li class="dropdown active">
+                                        @Html.ActionLink("Home","index","Home")
+                                    </li>
+
+                                    <li class="dropdown">
+                                        @Html.ActionLink("Contact","Contact","Home")
+                                    </li>
+                                    <li class="dropdown">
+                                        @Html.ActionLink("About", "About", "Home")
+                                    </li>
+                                    <li class="dropdown">
+                                        @Html.Partial("_LoginPartial")
+                                    </li>
+                                </ul>
+
+                            </nav>
+                        </div>
+                        <!-- end menu -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container" id="renderbody" style="padding-top: 100px">@RenderBody()</div>
+        <div>
+            
+            <hr />
+            <!-- Footer
+    ================================================== -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="widget">
+                                <h5>Browse pages</h5>
+                                <ul class="regular">
+                                    <li>@Html.ActionLink("Schedule","Schedule", "Schedule")</li>
+                                    <li>@Html.ActionLink("ImageGallery", "ImageGallery", "ImageGallery")</li>
+                                    <li>@Html.ActionLink("VideoGallery", "VideoGallery", "VideoGallery")</li>
+                                    <li>@Html.ActionLink("Organizer Details", "Schedule", "Schedule")</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="widget">
+                                <h5>Stay Connected</h5>
+                                <ul class="regular">
+                                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="widget">
+                                <!-- logo -->
+                                <a class="brand logo" href="index.html">
+
+                                </a>
+                                <!-- end logo -->
+                                @*<address>
+                                    <strong>Registered  Companyname, Inc.</strong><br>
+                                    8895 Somename Ave, Suite 600<br>
+                                    San Francisco, CA 94107<br>
+                                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                                </address>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="verybottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>
+                                    &copy; 2019 - All right reserved
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- JavaScript Library Files -->
+
+        <script src="~/assets/js/jquery.min.js"></script>
+        <script src="~/assets/js/jquery.easing.js"></script>
+        <script src="~/assets/js/google-code-prettify/prettify.js"></script>
+        <script src="~/assets/js/modernizr.js"></script>
+        <script src="~/assets/js/bootstrap.js"></script>
+        <script src="~/assets/js/jquery.elastislide.js"></script>
+        <script src="~/assets/js/sequence/sequence.jquery-min.js"></script>
+        <script src="~/assets/js/sequence/setting.js"></script>
+        <script src="~/assets/js/jquery.prettyPhoto.js"></script>
+        <script src="~/assets/js/application.js"></script>
+        <script src="~/assets/js/jquery.flexslider.js"></script>
+        <script src="~/assets/js/hover/jquery-hover-effect.js"></script>
+        <script src="~/assets/js/hover/setting.js"></script>
+        @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+        <!-- Template Custom JavaScript File -->
+        <script src="~/assets/js/custom.js"></script>
+
+    </body>
+    </html>

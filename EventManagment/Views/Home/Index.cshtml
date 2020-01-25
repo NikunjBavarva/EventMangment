@@ -1,0 +1,182 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <div class="container">
+        <!-- end slider navigation -->
+        <div class="row">
+            <div class="col-md-4">
+                <ul>
+                    <li>
+                        <div>
+                            <h3>Conference and Event Managment</h3>
+                            <p>
+                                This application build for any conference or events which is organized by any collage, school or organization.
+                            </p>
+                            <a class="btn btn-success" href="~/Home/About">Learn more &raquo;</a>
+                        </div>
+                            
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <img class="img-responsive" src="~/assets/img/brand-enhance.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<div class="row">
+    <div class="col-md-6">
+        <h2>Schedule</h2>
+        <p></p>
+        <button class="btn btn-default">@Html.ActionLink("View more", "Schedule", "Schedule")</button>
+    </div>
+    <div class="col-md-6">
+        <h2>Organizer Details</h2>
+        <p></p>
+        <button class="btn btn-default">@Html.ActionLink("View more","Schedule","Schedule")</button>
+    </div>
+    <div class="col-md-6">
+        <h2>Image Gallery</h2>
+        <p></p>
+        <button class="btn btn-default">@Html.ActionLink("View more", "ImageGallery", "ImageGallery")</button>
+    </div>
+    <div class="col-md-6">
+        <h2>Video Gallery</h2>
+        <p></p>
+        <button class="btn btn-default">@Html.ActionLink("View more", "VideoGallery", "VideoGallery")</button>
+    </div>
+</div>*@
+
+<section id="maincontent">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3 features">
+                <i class="fas fa-calendar-week"></i>
+                <h4>Event Schedule</h4>
+                <div class="dotted_line">
+                </div>
+                <p class="left">
+                    Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium imperdiet in pri mel virtute nam.
+                </p>
+                <button class="btn btn-default">@Html.ActionLink("View more", "Schedule", "Schedule")</button>
+            </div>
+            <div class="col-md-3 features">
+                <i class="far fa-images"></i>
+                <h4>Image Gallery</h4>
+                <div class="dotted_line">
+                </div>
+                <p class="left">
+                    Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium imperdiet in pri mel virtute nam.
+                </p>
+                <button class="btn btn-default">@Html.ActionLink("View more", "ImageGallery", "ImageGallery")</button>
+            </div>
+            <div class="col-md-3 features">
+                <i class="fas fa-video"></i>
+                <h4>Video Gallery</h4>
+                <div class="dotted_line">
+                </div>
+                <p class="left">
+                    Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium imperdiet in pri mel virtute nam.
+                </p>
+                <button class="btn btn-default">@Html.ActionLink("View more", "VideoGallery", "VideoGallery")</button>
+            </div>
+            <div class="col-md-3 features">
+                <i class="fas fa-sitemap"></i>
+                <h4>Organizer Details</h4>
+                <div class="dotted_line">
+                </div>
+                <p class="left">
+                    Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium imperdiet in pri mel virtute nam.
+                </p>
+                <button class="btn btn-default">@Html.ActionLink("View more", "Index", "Organizers")</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12">
+                <div class="tagline centered">
+                    <div class="row">
+                        <div class="span12">
+                            <div class="tagline_text">
+                                <h2>Don't miss this special offer for limited time only!</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, vix ceteros noluisse intellegat ne, ex nec insolens liberavisse, no adhuc causae nominati duo.
+                                </p>
+                            </div>
+                            <div class="btn-toolbar cta">
+                                <a class="btn btn-large btn-color" href="#">
+                                    <i class="icon-plane icon-white"></i> Try free version
+                                </a>
+                                <a class="btn btn-large btn-inverse" href="#">
+                                    <i class="icon-shopping-cart icon-white"></i> Buy license
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end tagline -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="home-posts">
+                <div class="col-md-12">
+                    <h3>Recent blog posts</h3>
+                </div>
+                <div class="col-md-4">
+                    <div class="entry-meta">
+                        <a href="#"><i class="fas fa-book-open"></i></a>
+                    </div>
+                    <!-- end .entry-meta -->
+                    <div class="entry-body">
+                        <a href="#">
+                            <h5 class="title">This is a standard post</h5>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.
+                        </p>
+                    </div>
+                    <!-- end .entry-body -->
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="entry-meta">
+                        <a href="#"><i class="far fa-images"></i></a>
+                    </div>
+                    <!-- end .entry-meta -->
+                    <div class="entry-body">
+                        <a href="#">
+                            <h5 class="title">This is a image post</h5>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.
+                        </p>
+                    </div>
+                    <!-- end .entry-body -->
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="entry-meta">
+                        <a href="#"><i class="fas fa-video"></i></a>
+                    </div>
+                    <!-- end .entry-meta -->
+                    <div class="entry-body">
+                        <a href="#">
+                            <h5 class="title">This is a video post</h5>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.
+                        </p>
+                    </div>
+                    <!-- end .entry-body -->
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

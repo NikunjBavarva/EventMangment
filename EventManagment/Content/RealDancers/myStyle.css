@@ -1,0 +1,9 @@
+﻿body {
+}
+.myuser {
+    float:left;
+}
+    .myuser li, .myuser li a {
+        list-style:none; color:#fff;
+
+    }
